@@ -9,15 +9,11 @@
 **********************************************************************/
 
 #include <stdlib.h>
+#include "datatypes.h"
 
 #ifndef BSPLINE
 #define BSPLINE
 
-struct point {
-  double x;
-  double y;
-  double z;
-};
 
 void compute_intervals(int *u, int n, int t);
 double blend(int k, int t, int *u, double v);
