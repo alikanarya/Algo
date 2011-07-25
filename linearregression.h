@@ -3,6 +3,6 @@
 
 #include "datatypes.h"
 
-void linearregression( point *sampleArray, double &alfa, double &beta );
+void linearregression( point *sampleArray, int sampleSize, double &alfa, double &beta );
 
 #endif // LINEARREGRESSION_H

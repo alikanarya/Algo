@@ -1,14 +1,12 @@
 #include "linearregression.h"
 #include "math.h"
 
-void linearregression( point *sampleArray, double &alfa, double &beta ){
+void linearregression( point *sampleArray, int sampleSize, double &alfa, double &beta ){
     /*
         linar regression of sample data,
 
         y = alfa + beta.x
      */
-
-    int sampleSize = sizeof(sampleArray);
 
     double xTotal = 0, yTotal = 0, yxTotal = 0, x2Total = 0;
 
