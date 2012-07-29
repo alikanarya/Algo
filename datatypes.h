@@ -7,4 +7,10 @@ struct point {
   double z;
 };
 
+struct range {
+    int start;
+    int end;
+};
+
+
 #endif // DATATYPES_H
