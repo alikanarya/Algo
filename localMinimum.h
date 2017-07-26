@@ -45,7 +45,13 @@ void findLocalMinimum(int *array, int array_size, QList<range> &list){
                     x.end = j - 1;
                     list.append(x);
                     break;
-                 }
+                } else if (j == (array_size - 1)) {
+                    range x;
+                    x.start = startIndex;
+                    x.end = j;
+                    list.append(x);
+                    break;
+                }
             }
         }
     } // main for
